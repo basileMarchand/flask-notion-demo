@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire d'inscription</title>
+  </head>
+  <body>
+    <form method="POST" action="">
+      {{ form.hidden_tag() }}
+      <p>{{ form.nom.label }}{{ form.nom() }}</p>
+      <p>{{ form.prenom.label }}{{ form.prenom() }}</p>
+      <p>{{ form.mail.label }}{{ form.mail() }}</p>
+      <p>{{ form.humeur.label }}{{ form.humeur() }}</p>
+      <p>{{ form.submit() }}</p>
+    </form>
+  </body>
+</html>

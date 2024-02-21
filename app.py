@@ -29,7 +29,7 @@ def home():
     return render_template('index.html', form=form)
 
 @app.route('/database')
-def voir_database():
+def database():
     donnees = pull_from_notion()
     return render_template('database.html', donnees=donnees)
 

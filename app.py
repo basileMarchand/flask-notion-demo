@@ -25,7 +25,7 @@ def home():
         humeur = form.humeur.data
         # Envoi des données à Notion ici
         push_to_notion(nom, prenom, mail, humeur)
-        return redirect(url_for('home'))
+        return redirect(url_for('database'))
     return render_template('index.html', form=form)
 
 @app.route('/database')
